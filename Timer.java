@@ -1,37 +1,39 @@
-class Time {
-    public static void main(String ar[]) {
-        int a = 3, b = 0;
-        MyThread th = new MyThread();
-        Thread t = new Thread(th);
-        t.start();
+class Timer {
+    public static void main(String[] args) {
+        Thread1 obj1 = new Thread1();
+        Thread obj2 = new Thread(obj1);
+        obj2.start();
         try {
             Thread.sleep(10000);
-            System.out.println("Main");
+            System.out.println("Time completed");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
 }
 
-class MyThread implements Runnable {
-    int h = 4, m = 59, s = 53;
+class Thread1 implements Runnable {
+    int h = 5, m = 50, s = 49;
 
     public void run() {
+        System.out.print("\033[H\033[2J");
         for (int i = 1; i <= 10; i++) {
             if (s >= 60) {
                 m++;
-                s = 0;
+                s = 00;
             }
             if (m >= 60) {
                 h++;
-                m = 0;
+                m = 00;
             }
             System.out.println(h + ":" + m + ":" + s);
             s++;
             try {
                 Thread.sleep(1000);
-            } catch (InterruptedException e) {
+            } catch (Exception e) {
+
             }
+            System.out.print("\033[H\033[2J");
         }
     }
 }
