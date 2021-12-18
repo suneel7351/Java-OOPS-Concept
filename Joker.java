@@ -18,12 +18,13 @@ class myFrame extends Frame {
     public void paint(Graphics g) {
         g.drawLine(100, 200, 200, 100);
         g.drawLine(200, 100, 300, 200);
-        g.setColor(Color.BLACK);
-        g.fillOval(150, 200, 10, 10);
-        g.fillOval(250, 200, 10, 10);
+        g.drawLine(100, 200, 300, 200);
         g.drawArc(100, 100, 200, 200, 0, -180);
-        g.fillArc(178, 250, 50, 20, 180, 180);
-        g.drawRect(50, 50, 300, 300);
+        g.drawLine(135, 225, 155, 225);
+        g.drawLine(230, 225, 255, 225);
+
+        g.drawLine(220, 280, 180, 280);
+
     }
 
 }
