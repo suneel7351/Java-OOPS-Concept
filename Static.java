@@ -21,7 +21,6 @@ public class Static {
         b = 30;
         n = 20;
     }
-    // static method call automatically when class loaded in memory
     static {
         a = 60;
         System.out.println("This is static method ");

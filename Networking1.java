@@ -3,17 +3,10 @@ import java.net.*;
 import java.util.*;
 
 class Networking1 {
-    public static void main(String[] args) throws UnknownHostException {
-        InetAddress address = InetAddress.getLocalHost();
-        InetAddress n = InetAddress.getByName("www.google.com");
-        InetAddress allName[] = InetAddress.getAllByName("www.google.com");
-        System.out.println(address);
-        System.out.println(n);
-        for (int i = 0; i < allName.length; i++) {
-            System.out.println("All Ip of google " + allName[i]);
-        }
+    // throws UnknownHostException
+    public static void main(String[] args) {
         try {
-            URL url = new URL("https://www.facebook.com/bussiness/news");
+            URL url = new URL("https://www.facebook.com:3000/bussiness/news");
             System.out.println(url.getFile());
             System.out.println(url.getPort());
             System.out.println(url.getProtocol());

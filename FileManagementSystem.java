@@ -3,7 +3,7 @@ import java.io.File;
 
 class FileManagementSystem {
     public static void main(String[] args) {
-        File obj = new File("/home/suneel/Desktop/File/");
+        File obj = new File("/home/suneel/Desktop/File");
         System.out.println(obj.getName());
         System.out.println(obj.getParent());
         System.out.println(obj.getPath());

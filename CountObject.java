@@ -6,10 +6,6 @@ public class CountObject {
         count obj4 = new count();
         count obj5 = new count();
         obj1.display();
-        obj5.display();
-        obj3.display();
-        obj2.display();
-        obj4.display();
 
     }
 }

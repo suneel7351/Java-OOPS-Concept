@@ -20,11 +20,11 @@ class Thread1 implements Runnable {
         for (int i = 1; i <= 10; i++) {
             if (s >= 60) {
                 m++;
-                s = 00;
+                s = 0;
             }
             if (m >= 60) {
                 h++;
-                m = 00;
+                m = 0;
             }
             System.out.println(h + ":" + m + ":" + s);
             s++;
